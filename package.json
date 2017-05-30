@@ -1,0 +1,31 @@
+{
+  "name": "cssdamacy",
+  "version": "1.0.0",
+  "description": "### Background",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch"
+  },
+  "engines": {
+    "node": "6.10.1",
+    "npm": "3.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deadwater88/cssDamacy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deadwater88/cssDamacy/issues"
+  },
+  "homepage": "https://github.com/deadwater88/cssDamacy#readme",
+  "dependencies": {
+    "babel-loader": "^7.0.0",
+    "node": "0.0.0",
+    "npm": "^4.6.1",
+    "webpack": "^2.6.1"
+  }
+}
