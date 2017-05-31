@@ -9,9 +9,9 @@ canvas {
 
 
 span#mark {
-  position: absolute;
-  top: 100px;
-  left: 100px;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 
@@ -39,4 +39,10 @@ span#mark {
 
 body > div {
   position: absolute;
+  border: 1px solid black;
+}
+
+.target {
+  top: 500px;
+  left: 500px;
 }
