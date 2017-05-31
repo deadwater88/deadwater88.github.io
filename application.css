@@ -1,2 +1,42 @@
-#katamari {
+body {
+  position: relative;
+}
+
+canvas {
+  position: relative;
+}
+
+
+
+span#mark {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+
+/*@keyframes spin {
+  from {transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {transform: rotateX(360deg) rotateY(0deg);
+  }
+}*/
+
+
+#mark {
+   animation: spin 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+
+.child {
+  position: absolute;
+  border: 1px solid black;
+  top: 25px;
+  left: 0px;
+}
+
+body > div {
+  position: absolute;
 }
