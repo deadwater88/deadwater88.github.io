@@ -9,7 +9,7 @@ canvas {
 
 
 span#mark {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -24,7 +24,7 @@ span#mark {
 
 
 #mark {
-   animation: spin 2s;
+   animation: spin 10s;
    animation-iteration-count: infinite;
    animation-timing-function: linear;
 }
@@ -37,7 +37,7 @@ span#mark {
   left: 0px;
 }
 
-body > div {
+body div {
   position: absolute;
   border: 1px solid black;
 }
