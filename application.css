@@ -1,7 +1,12 @@
+html {
+}
+
 body {
   position: relative;
   background-image: url("http://archive-media-0.nyafuu.com/wsr/image/1459/73/1459735456553.jpg");
-  margin: 0
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 * {
@@ -16,7 +21,7 @@ a {
 
 canvas {
   position: absolute;
-  z-index: -500;
+
 }
 
 header {
@@ -92,4 +97,15 @@ body div.target {
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
+}
+
+#fieldContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#score {
+  margin-top: 20px;
+  margin-right: 40px;
 }
