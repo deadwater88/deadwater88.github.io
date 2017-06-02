@@ -1,19 +1,52 @@
 body {
   position: relative;
+  background-image: url("http://archive-media-0.nyafuu.com/wsr/image/1459/73/1459735456553.jpg");
+  margin: 0
+}
+
+* {
+  user-select: none;
+  font-family: Helvetica, sans-serif;
+
+}
+
+a {
+  z-index: 1000;
 }
 
 canvas {
-  position: relative;
-}
-
-
-
-span#mark {
   position: absolute;
-  top: 0;
-  left: 0;
+  z-index: -500;
 }
 
+header {
+  font-size: 46px;
+  background-color: black;
+  color:white;
+  padding: 10px 0px 10px 20px;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+
+
+}
+
+div#midContainer {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+div#aboutSection {
+  margin-left: 20px;
+}
+
+#field {
+  height: 500px;
+  width: 800px;
+  margin-top: 15px;
+  border: 2px solid white;
+  margin-right: 20px;
+}
 
 /*@keyframes spin {
   from {transform: rotateX(0deg) rotateY(0deg);
@@ -23,12 +56,6 @@ span#mark {
 }*/
 
 
-#mark {
-   animation: spin 10s;
-   animation-iteration-count: infinite;
-   animation-timing-function: linear;
-}
-
 
 .child {
   position: absolute;
@@ -37,12 +64,32 @@ span#mark {
   left: 0px;
 }
 
-body div {
+body div.target {
   position: absolute;
   border: 1px solid black;
 }
 
-.target {
-  top: 500px;
-  left: 500px;
+/*#field:hover {
+  animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}*/
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
